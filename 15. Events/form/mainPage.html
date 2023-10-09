@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Main Page</title>
+        <link rel="stylesheet" href="mainPage.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Hoshgeldiniz!</h1>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <section class="profile-card">
+            <img src="profile.png" alt="Profile Image" class="profile-image" />
+            <h2>Admin</h2>
+            <p>Administrator</p>
+        </section>
+
+        <section class="articles">
+            <article>
+                <h3>Makala 1</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                </p>
+            </article>
+            <article>
+                <h3>Makala 2</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                </p>
+            </article>
+        </section>
+
+        <script>
+            document
+                .getElementById("logoutBtn")
+                .addEventListener("click", function () {
+                    location.href = "login.html";
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+Document
+|-- Doctype: html
+|-- Element: html
+    |-- Element: head
+    |   |-- Element: title
+    |       |-- Text: DOM Tema
+    |
+    |-- Element: body
+        |-- Element: p
+            |-- Text: DOM ogrenyaris
+        |-- Element: a
+            |-- Attribute: href
+            |-- Text: Google

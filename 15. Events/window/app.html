@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(168, 171, 174);
+            }
+
+            .container > div {
+                background-color: #f1f1f1;
+                width: 200px;
+                margin: 10px;
+                text-align: center;
+                line-height: 150px;
+                font-size: 30px;
+            }
+            #loadingScreen {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #yokary {
+                display: none;
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background: transparent;
+            }
+            #yokary > img {
+                width: 50px;
+                height: 50px;
+                background-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loadingScreen">
+            <img src="loader.gif" alt="Loading..." />
+        </div>
+
+        <div class="resize-container">
+            <p>Window size: <span id="windowSize">Width x Height</span></p>
+        </div>
+
+        <div class="parent-container">
+            <button id="yokary">
+                <img src="backToTop.png" alt="" />
+            </button>
+
+            <div class="container">
+                <div>Setir 1</div>
+                <div>Setir 2</div>
+                <div>Setir 3</div>
+                <div>Setir 5</div>
+                <div>Setir 6</div>
+                <div>Setir 7</div>
+                <div>Setir 8</div>
+                <div>Setir 9</div>
+                <div>Setir 10</div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
